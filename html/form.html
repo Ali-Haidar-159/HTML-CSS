@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+			<meta charset="utf-8">
+			<title>Registration form </title>
+		</head>
+		
+		<body>
+			<header>
+				<h2 style="color:red;text-align:center;"> This is Registration Form </h2>
+			</header>
+			
+			<main> 
+			<form>
+				
+				<div style="margin-bottom:20px;">
+					<label for="fullname">Full Name : </label>
+					<input type="text" Name="fullname" id="fullname" required>
+				</div>
+				
+				<div style="margin-bottom:20px;">
+					<label for="email">Email : </label>
+					<input type="email" name="email" id="email" required>
+				</div>
+				
+				<div style="margin-bottom:20px;">
+					<label for="password">Password : </label>
+					<input type="password" name="password" id="password" required>
+				</div>
+				
+				<div style="margin-bottom:20px">
+					<label for="gender">Gender : </label>
+					<input type="radio" name="gender" id="gender" value="male" checked>Male
+					<input type="radio" name="gender" id="gender" value="female">Female 
+				</div>
+				
+				<div style="margin-bottom:20px">
+					<label for="dob">Date of Birth : </label>
+					<input type="date" name="dob" id="dob" >
+				</div>
+				
+				<div style="margin-bottom:20px">
+					<label for="religion">Religion : </label>
+					<input type="checkbox" name="religion" id="religion" value="muslin" checked>Muslim
+					<input type="checkbox" name="religion" id="religion" value="hindu">Hindu
+				</div>
+				
+				<div style="margin-bottom:20px">
+					<label for="dept">Department : </label>
+					<select Name="dept">
+						<option value="cse">CSE</option>
+						<option value="eee" selected>EEE</option>
+						<option value="ce">Civil</option>
+						<option value="te">Textile</option>
+						<option value="bba">BBA</option>
+					</select>
+				</div>
+				
+				<div style="margin-bottom:20px">
+					<label for="pic">Picture : </label>
+					<input type="file" name="pic" id="pic" required>
+				</div>
+				
+				<div style="margin-bottom:20px">
+					<label for="msg">Message : </label> <br>
+					<textarea style="margin-left:80px" cols="50" rows="10"></textarea>
+				</div>
+				
+				<div style="margin-bottom:20px">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Clear">
+					<input type="button" value="Login" disabled>
+				</div>
+			</form>
+				
+			</main>
+		</body>
+
+</html>

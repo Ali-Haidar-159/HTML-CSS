@@ -1,0 +1,46 @@
+
+:root{
+	--backgroundColor : #F9E79F ;
+	--cardBackground : #B4A56A ;
+}
+
+@media screen and (max-width:600px){
+	#card{
+		visibility:hidden ;
+	}
+}
+
+body{
+	background-color:var(--backgroundColor) ;
+}
+
+h2{
+	text-align:center ;
+}
+
+#card{
+	width:330px ;
+	border:3px black solid ;
+	box-shadow:1px 2px 4px black ;
+	margin:10px ;
+}
+
+#card:hover{
+	box-shadow:none ;
+}
+
+#cardImage{
+	padding:5px ;
+	margin:5px ;
+}
+
+#cardTitle{
+	font-size:2rem;
+	text-align:center ;
+	font-weight:bold ;
+}
+
+#descriptionCard{
+	background-color : var(--cardBackground);
+	text-align:justify ;
+}

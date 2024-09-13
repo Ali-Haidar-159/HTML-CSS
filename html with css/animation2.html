@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		
+		<title>Animation Test 2</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		
+		<style type="text/css">
+			
+			#image1{
+				height : 200px ;
+				max-width : 200px ;
+				display : block ;
+				margin : 0 auto ;
+				margin-top : 150px ;
+				border-radius : 50% ;
+				border : 5px solid black ;	
+				
+				position : relative ;
+				
+				animation-name : specialAnimation ;
+				animation-duration : 3s; 
+				animation-iteration-count : 3 ;
+			}
+			
+			@keyframes specialAnimation{
+				0% {
+					top : 0 ;
+					left : 0 ;
+				}
+				
+				50%{
+					top : 100px ;
+					left : 0 ;
+				}
+				
+				100%{
+					top : 0 ;
+					left : 0 ;
+				}
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+		
+		</header>
+		
+		<main>
+			<img id="image1" src="https://shorturl.at/W3cbB" alt="No Image">
+		</main>
+		
+		<footer>
+		
+		</footer>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,49 @@
+
+:root{
+	--backgroundColor : #b3e9c7 ;
+}
+
+#mainDiv{
+	background-color : var(--backgroundColor) ;
+	display : flex ;
+	width : 500px ;
+	margin : 0 auto ;
+	
+}
+
+#mainDiv div a {
+	text-decoration : none ; 
+	color : black ;
+	
+}
+
+#mainDiv div {
+	padding: 15px ; 
+	margin : 0 auto ;
+	
+}
+
+#mainDiv div:hover{
+	background-color : #39e8db ;
+	cursor : pointer ;
+}
+
+#contact{
+	position : relative ;
+}
+
+#drop{
+	position : absolute ;
+	right: 110px  ;
+	top : 28px ;
+	/* visibility : hidden ; */
+	
+}
+
+#contact :hover #drop{
+	visibility : visible ;
+}
+
+
+
+

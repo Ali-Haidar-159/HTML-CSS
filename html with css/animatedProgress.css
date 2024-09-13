@@ -1,0 +1,114 @@
+
+h2{
+	text-align : center ;
+	color : blue ;
+}
+
+#mainDiv {
+	height:400px ;
+	width : 300px ;
+	background-color : gray ;
+	margin : 0 auto ;
+	border-radius : 5px ;
+}
+
+#mainDiv ul li {
+	list-style-type : none ;
+	text-decoration : none ;
+	padding : 20px ;
+	text-transform : uppercase ;
+	font-weight:bold ;
+	
+	position : relative ;
+}
+
+#mainDiv ul li::before {
+	content: '' ;
+	position:absolute;
+	
+	top:80%;
+	left:0 ;
+	
+	background-color:#f7dfd9 ;
+	height:25px ;
+	width:250px;
+	border-radius:1000px ;
+}
+
+#mainDiv ul li::after{
+	content: '' ;
+	position:absolute;
+	
+	top:80%;
+	left:0 ;
+	
+	background-color:#de684a; 
+	height:25px ;
+	width:0;
+	border-radius:1000px ;
+	
+	animation-timing-function:linear ;
+	animation-duration:2s ;
+	animation-fill-mode:forwards ;
+	
+}
+
+#mainDiv ul li#c::after{
+	animation-name : cAnimation ;
+}
+
+#mainDiv ul li#java::after{
+	animation-name : javaAnimation ;
+}
+
+#mainDiv ul li#cSharp::after{
+	animation-name : cSharpAnimation ;
+}
+
+#mainDiv ul li#cPlusPlus::after{
+	animation-name : cPlusPlusAnimation ;
+}
+
+#mainDiv ul li#html_css::after{
+	animation-name : html_cssAnimation ;
+}
+
+#mainDiv ul li#figma::after{
+	animation-name : figmaAnimation ;
+}
+
+@keyframes cAnimation{
+	to{
+		width:88% ;
+	}
+}
+
+@keyframes javaAnimation{
+	to{
+		width:83% ;
+	}
+}
+
+@keyframes cSharpAnimation{
+	to{
+		width:80% ;
+	}
+}
+
+@keyframes cPlusPlusAnimation{
+	to{
+		width:70% ;
+	}
+}
+
+@keyframes html_cssAnimation{
+	to{
+		width:78% ;
+	}
+}
+
+@keyframes figmaAnimation{
+	to{
+		width:75% ;
+	}
+}

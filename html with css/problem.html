@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<!-- <meta http-equiv="refresh" content="1"> -->
+		
+		<title>Practice</title>
+		
+		<style type="text/css">
+		
+			#header1{
+				display:flex ;
+				background-color:gray ;
+				height:100px ;
+				align-items : 50px ;
+				margin-bottom:15px ;
+			}
+			
+			#header1 > h2{
+				padding : 10px ; 
+				color:white ;
+			}
+			
+			h3{
+				color:white;
+			}
+			
+			#d1{
+				grid-area : left1 ;
+			}
+			#d2{
+				grid-area : left2 ;
+			}
+			#d3{
+				grid-area : left3 ;
+			}
+			#d4{
+				grid-area : left4 ;
+			}
+			#d5{
+				grid-area : heading ;
+			}
+			#d6{
+				grid-area : para ;
+			}
+
+
+			#mainDiv{
+				
+				width:100% ;
+				
+				display : grid ;
+				
+				grid-template-areas : 
+				'left1  heading heading heading'
+				'left2  heading heading heading'
+				'left3  para para para'
+				'left4  para para para'
+				;
+				grid-row-gap : 10px ; 
+				grid-column-gap : 10px ; 
+				grid-template-rows : 50px 50px 50px 50px ;
+				
+			}
+			
+			#d1,#d2,#d3,#d4{
+				border:1px black solid ;
+				border-radius : 5px ;
+				background-color : #33DAFF ;
+				text-align :center ;
+			}
+			
+			#d5,#d6{
+				width : 75% ;
+				margin-left : 30px ;
+			}
+			
+		</style>
+	
+	</head>
+	
+	<body>
+	
+		<header>
+			<div id="header1"><h2>China</h2></div>
+		</header>
+	
+		<main>	
+			<div id="mainDiv">
+				<div id="d1">
+					<h3>The Flight</h3>
+				</div>
+				
+				<div id="d2">
+					<h3>The City</h3>
+				</div>
+				
+				<div id="d3">
+					<h3>The Island</h3>
+				</div>
+				
+				<div id="d4">
+					<h3>The Food</h3>
+				</div>
+				
+				<div id="d5">
+					<h1>The City</h1>
+				</div>
+				
+				<div id="d6">
+					<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+					
+					<p>You will learn more about web layout and responsive web pages in a later chapter</p>
+				</div>
+			</div>
+		</main>
+	
+	</body>
+
+</html>

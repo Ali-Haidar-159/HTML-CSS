@@ -1,0 +1,60 @@
+
+*{
+	margin : 0 ;
+	padding : 0 ; 
+	box-sizing : border-box ;
+}
+
+h1{
+	text-align : center;
+	margin-top : 20px ;
+}
+
+#mainDiv{
+	width : 320px ;
+	/* background-color : gray ; */
+	margin : 0 auto ;
+	position : relative ;
+	text-align : center;
+}
+
+#mainDiv:hover {
+	box-shadow : 5px 5px 5px 5px #888888 ;
+}
+
+
+#field{
+	height : 50px ; 
+	width  : 300px ;
+	border : 1px solid black ;
+	margin-top : 10px ;
+	margin-bottom : 10px ;
+	font-size : 1rem ;
+}
+
+input[type="button"] {	
+	align-items : center;
+    padding: 20px;	
+}
+
+.operator{
+	background-color :#eeb3a4 ;
+	border : none ;
+}
+
+.delete{
+	background-color : #e3f0a3 ;
+	border : none ;
+}
+
+.delete:hover {
+	border : 1.5px solid black ;
+}
+
+.operator:hover {
+	border :1.5px solid black ;
+}
+
+#calBody > div {
+	margin-bottom : 5px ;
+}

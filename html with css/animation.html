@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		
+		<title>Animation Test</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<!-- <meta http-equiv="refresh" content="1"> -->
+		
+		<style type="text/css">
+			
+			#image1{
+				height : 200px ;
+				max-width : 200px ;
+				display : block ;
+				margin : 0 auto ;
+				margin-top : 150px ;
+				border-radius : 50% ;
+				border : 5px solid black ;	
+			}
+			
+			#image1:hover {
+				animation-name : aliAnimation ;
+				animation-duration : 5s ;
+				animation-fill-mode :forwards ;
+			}
+			
+			@keyframes aliAnimation {
+				from {
+					border-color : black ;
+				}
+				
+				to{
+					max-width : 400px ;
+					border-color : red ;
+				}
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+		
+		</header>
+		
+		<main>
+			
+			<img id="image1" src="https://shorturl.at/W3cbB" alt="No Image">
+			
+		</main>
+		
+		<footer>
+		
+		</footer>
+		
+	</body>
+	
+</html>

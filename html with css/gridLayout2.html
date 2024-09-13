@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		
+		<title>Grid Layout 2</title>
+		
+		<style type="text/css">
+			
+			#header1{
+				grid-area : header ;
+			}
+			
+			#menu1{
+				grid-area : menu ;
+			}
+			
+			#main1{
+				grid-area:main ;
+			}
+			
+			#aside1{
+				grid-area:aside ;
+			}
+			
+			#footer1{
+				grid-area:footer ;
+			}
+			
+			
+			#mainDiv{
+				display:grid ;
+				
+				grid-template-areas:
+					'header header header header header header'
+					'menu main main aside aside aside'
+					'menu footer footer footer footer footer' ;
+				
+			}
+			
+			#mainDiv > div {
+				background-color:chocolate;
+				padding:5px ;
+				text-align:center ;
+				border : 2px black solid ;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<header>
+			<h2>This is Grid Layout 2</h2>
+		</header>
+		
+		<main>
+			
+			<div id="mainDiv">
+			
+				<div id="header1">
+					<h2>Header</h2>
+				</div>
+			
+				<div id="menu1">
+					<h2>Menu</h2>
+				</div>
+				<div id="main1">
+					<h2>Main</h2>
+				</div>
+				<div id="aside1">
+					<h2>Aside</h2>
+				</div>
+				<div id="footer1">
+					<h2>Footer</h2>
+				</div>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+			
+		</footer>
+	
+	</body>
+
+</html>

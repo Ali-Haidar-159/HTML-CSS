@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		
+		<title>Scrolling Text</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<meta name="author" content="ali">
+		
+		<style type="text/css">
+			
+			*{
+				padding:0 ;
+				margin: 0 ;
+			}
+			
+			body{
+				box-sizing : border-box ;
+				font-family : arial , "Times New Roman" ;
+				font-size:1.2rem;
+			}
+			
+			#mainDiv{
+				display:flex ;
+				justify-content : center ;
+				position : relative ;
+			}
+			
+			#d1{
+				padding : 10px ;
+				margin : 25px ;
+				border : none;
+				width : 90px ;
+				height : 34px ;
+				background-color : red ;
+				color : white ;
+				font-weight:bold ;
+				position : absolute ;
+				left : 350px ;
+			}
+			
+			#d2{
+				padding : 10px ;
+				margin : 25px ;
+				border : 2px solid red;
+				width : 250px  ;
+				height : 30px ;
+			}
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+		
+		</header>
+		
+		<main>
+			
+			<div id="mainDiv">
+
+				<div id="d1">
+					<span>New Text</span>
+				</div>
+			
+				<div id="d2">
+					<marquee behavior="" direction="left" loop="2">my name is ali haidar . I am a student of cse department.This is my 8th semester</marquee>
+				</div>
+			</div>
+			
+		</main>
+		
+		<footer>
+		
+		</footer>
+		
+	</body>
+	
+</html>

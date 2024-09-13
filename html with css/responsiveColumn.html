@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		
+		<title>Responsive Column</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<!-- <meta http-equiv="refresh" content="1"> -->
+		
+		<style>
+		
+			*{
+				box-sizing : border-box ;
+			}
+			
+			<!-- -- using Float :  -->
+			
+			<!-- .col{ -->
+				<!-- float : left ; -->
+				<!-- width : 25% ; -->
+				<!-- padding : 10px ; -->
+			<!-- } -->
+			
+			<!-- @media screen and (max-width:992px){ -->
+				<!-- .col { -->
+					<!-- width : 50% ; -->
+				<!-- } -->
+			<!-- } -->
+			
+			<!-- @media screen and (max-width:600px){ -->
+				<!-- .col{ -->
+					<!-- width : 100% ; -->
+				<!-- } -->
+			<!-- } -->
+			
+			<!-- -- using Flex Layout :  -->
+			
+			#mainDiv{
+				display : flex ;
+				flex-wrap : wrap ;
+			}
+			
+			.col{
+				flex : 25% ;
+				padding : 10px ;
+			}
+			
+			@media screen and (max-width:992px){
+				.col {
+					flex : 50%;
+				}
+			}
+			
+			@media screen and (max-width:600px){
+				.col {
+					flex : 100% ;
+				}
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+		
+		</header>
+		
+		<main>
+			
+			<div id="mainDiv">
+				
+				<div class="col">
+					<h2>HTML</h2>
+					<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Arcu pellentesque fames est commodo tortor mauris faucibus. Himenaeos neque arcu nisi sem consectetur euismod. Facilisi hendrerit ante blandit eu velit, mollis tortor. Scelerisque blandit sapien litora pretium at neque purus. In tincidunt nostra odio senectus netus gravida; felis risus a. Cursus ullamcorper laoreet at aliquet aliquam nulla phasellus sapien. </p>
+				</div>
+				
+				<div class="col">
+					<h2>CSS</h2>
+					<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Arcu pellentesque fames est commodo tortor mauris faucibus. Himenaeos neque arcu nisi sem consectetur euismod. Facilisi hendrerit ante blandit eu velit, mollis tortor. Scelerisque blandit sapien litora pretium at neque purus. In tincidunt nostra odio senectus netus gravida; felis risus a. Cursus ullamcorper laoreet at aliquet aliquam nulla phasellus sapien. </p>
+				</div>
+				
+				<div class="col">
+					<h2>Java</h2>
+					<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Arcu pellentesque fames est commodo tortor mauris faucibus. Himenaeos neque arcu nisi sem consectetur euismod. Facilisi hendrerit ante blandit eu velit, mollis tortor. Scelerisque blandit sapien litora pretium at neque purus. In tincidunt nostra odio senectus netus gravida; felis risus a. Cursus ullamcorper laoreet at aliquet aliquam nulla phasellus sapien. </p>
+				</div>
+				
+				<div class="col">
+					<h2>C Sharp</h2>
+					<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Arcu pellentesque fames est commodo tortor mauris faucibus. Himenaeos neque arcu nisi sem consectetur euismod. Facilisi hendrerit ante blandit eu velit, mollis tortor. Scelerisque blandit sapien litora pretium at neque purus. In tincidunt nostra odio senectus netus gravida; felis risus a. Cursus ullamcorper laoreet at aliquet aliquam nulla phasellus sapien. </p>
+				</div>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+		
+		</footer>
+		
+	</body>
+	
+</html>

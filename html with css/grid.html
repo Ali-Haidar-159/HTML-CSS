@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		
+		<title>Grid Layout</title>
+		
+		<meta charset= "utf-8">
+		<meta name = "viewport" content = "width=device-width , initial-scale=1.0">
+		<meta http-equiv= "refresh" content= "2" >
+		
+		<style type="text/css">
+		
+			:root{
+				--colors : #eea595 ;
+				--borderColor : #506c47 ;
+			}
+			
+			#mainDiv{
+				display : grid ; 
+				grid-template-columns : auto auto auto auto ;
+				grid-gap : 5px 5px ;
+				background-color : var(--colors) ;
+			}
+			
+			#mainDiv > div {
+				padding : 5px ;
+				border : 2px solid var(--borderColor) ;
+				text-align : center ;
+			}
+			
+			#d1{
+				grid-column-start  : 1   ;
+				grid-column-end  : 3   ;
+				
+			}
+			
+			#d8{
+				grid-row-start : 3  ; 
+				grid-row-end : 5  ; 				
+			}
+			
+			
+			.centering	{
+				text-align : center ;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<header>
+			<h3 class="centering">This is Grid Layout Test</h3>
+		</header>
+		
+		<main>
+			
+			<div id="mainDiv">
+				
+				<div id="d1">1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<div>7</div>
+				<div id="d8">8</div>
+				<div>9</div>
+				<div>10</div>
+				<div>11</div>
+				<div>12</div>
+				<div>13</div>
+				<div>14</div>
+				<div>15</div>
+				<div>16</div>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+		
+		</footer>
+	
+	</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		
+		<title>FlexBox Practice</title>
+		
+		<style type="text/css">
+			
+			:root{
+				--spanColor : blue ;
+			}
+			
+			span{
+				color:var(--spanColor) ;
+			}
+			
+			#mainDiv{
+				background-color : gray ;
+				height : 250px ;
+				font-size:30px ;
+				display : flex ;
+				flex-wrap : wrap;
+				flex-direction:row ;
+				justify-content:space-between ;
+				align-items : center ;
+			}
+			
+			#mainDiv > div {
+				padding:10px ;
+				margin:5px ;
+				background-color:aqua ;
+			}
+			
+			#mainDiv > div:hover{
+				color:red ;
+				font-size:35px ;
+				cursor:pointer ;
+
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1>This is FlexBox practice</h1>
+		</header>
+		
+		<main>
+			<div id="mainDiv">
+				<div id="div1">
+					Div1
+				</div>
+				
+				<div id="div2">
+					Div2
+				</div>
+				
+				<div id="div3">
+					Div3 
+				</div>
+				
+				<div id="div4">
+					Div4
+				</div>
+				
+				<div id="div5">
+					Div5
+				</div>
+				
+				<div id="div6">
+					Div6 
+				</div>
+				
+				<div id="div7">
+					Div7
+				</div>
+				
+				<div id="div8">
+					Div8
+				</div>
+				
+				<div id="div9">
+					Div9
+				</div>
+				
+			</div>
+		</main>
+		
+		<footer>
+			<!-- <span>&copy; created by Md.Ali Haidar</span> -->
+		</footer>
+	</body>
+</html>

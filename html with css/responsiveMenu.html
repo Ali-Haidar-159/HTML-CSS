@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		
+		<title>Responsive Menu</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<!-- <meta http-equiv="refresh" content="1"> -->
+		
+		<style>
+			
+			#mainDiv{
+				display : flex ;
+				justify-content : flex-end ;
+				background-color : cadetblue ;
+			}
+			
+			#mainDiv a {
+				padding : 10px ; 
+				text-decoration : none ;
+				color : white ; 
+				font-weight : bold ;
+			}
+			
+			#mainDiv a:hover {
+				background-color : red ;
+			}
+			
+			@media screen and (max-width:600px){
+				
+				#mainDiv {
+					background-color : indigo ;
+					flex-direction : column ;
+					text-align : center ;
+				}
+				
+				#mainDiv a {
+					border-radius : 10px ;
+					margin : 10px 0px ;
+				}
+				
+				
+				
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+		
+		</header>
+		
+		<main>
+			
+			<div id="mainDiv">
+				
+				<a href="#" target="black">Home</a>
+				<a href="#" target="black">Contact</a>
+				<a href="#" target="black">About</a>
+				<a href="#" target="black">Tutorial</a>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+		
+		</footer>
+		
+	</body>
+
+</html>

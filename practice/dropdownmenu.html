@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		
+		<title>Drop Down Menu</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		
+		<style>
+			
+			#mainDiv{
+				background-color:#ec7063 ;	
+				border-radius:3px ;
+				text-align:center;
+				padding:1% 7% ;
+			}
+			
+			#mainDiv a{
+				padding:10px 20px ;
+				text-decoration:none ;
+				color:white ;
+			}
+			
+			#mainDiv a:hover{
+				background-color:gray ;
+			}
+			
+			#dpMenu{
+				display:inline;
+				position:relative ;
+			}
+			
+			#dpMenu #dpmOption{
+				position:absolute ;		
+				background-color :#ec7063; 
+				top:30px ;
+				right:0px ;
+				display:none; 
+			}
+			
+			#dpMenu #dpmOption a{
+				display:block;
+			}
+			
+			#dpMenu:hover #dpmOption{
+				display:block;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+		
+		</header>
+		
+		<main>
+			
+			<div id="mainDiv">
+				
+				<a href="#" target="blank">Home</a>
+				<a href="#" target="blank">About me</a>
+				
+				<div id="dpMenu">
+					
+					<a href="#" target="blank">Contact</a>
+				
+					<div id="dpmOption">
+						
+						<a href="#" target="blank">Facebook</a>
+						<a href="#" target="blank">LinkedIn</a>
+						<a href="#" target="blank">Email</a>
+						
+					</div>
+					
+				</div>
+				
+				<a href="#" target="blank">Tutorial</a>
+				<a href="#" target="blank">Skills</a>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+		
+		</footer>
+		
+	</body>
+	
+</html>

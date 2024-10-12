@@ -1,0 +1,118 @@
+
+/* initial design start  */
+
+html{
+	scroll-behavior:smooth;
+}
+
+*{
+	margin:0 ;
+	padding:0;
+	box-sizing:border-box ;
+}
+
+body {
+    background: linear-gradient(to right, #86e573, #bbce52);
+}
+
+
+/* initial desing end  */
+
+/* card design start  */
+
+#mainDiv{
+	display:flex ;
+	flex-wrap:wrap ;
+}
+
+#card{
+	width:220px ;
+	height:160px;
+	background-color:#ffffff ;
+	margin:10px auto ;
+	border-radius:15px ;
+	padding:15px ;
+	position:relative;
+	top:100px ;
+	transition:0.4s ;
+	overflow:hidden;
+}
+
+#card:hover{
+	height:330px ;
+	overflow:visible
+}
+
+#card #imgPart{
+	position:relative;
+	transition:0.4s;
+}
+
+#card #imgPart img{
+	max-width:100% ;
+	height:auto ;
+	border-radius:15px ;
+	transition:0.4s;
+}
+
+#card:hover #imgPart{
+	top:-80px;
+	transform:scale(0.75);
+}
+
+#card #contentPart {
+	position:relative;
+	top: 175px ;
+}
+
+#card:hover #contentPart{
+	top: -65px ;
+}
+
+#contentPart{
+	text-align:center;
+}
+
+#contentPart p,button{
+	padding:15px ;
+}
+
+button{
+	width:160px ;
+	height:45px ;
+	color:white ;
+	font-size:1.2rem ;
+	border-radius:10px ;
+	border:none ;
+}
+
+button:hover{
+	opacity:0.8;
+}
+
+#h-1{
+	color: #3ec358;
+}
+
+#btn-1{
+	background-color:#3ec358 ;
+}
+
+
+#h-2{
+	color: #458aaa;
+}
+
+#btn-2{
+	background-color:#458aaa ;
+}
+
+#h-3{
+	color: #b54587;
+}
+
+#btn-3{
+	background-color:#b54587 ;
+}
+
+/* card design end  */

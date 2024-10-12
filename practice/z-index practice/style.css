@@ -1,0 +1,64 @@
+
+/* initial design start  */
+
+*{
+	padding:0 ;
+	margin:0 ;
+	box-sizing:border-box ;
+}
+
+html{
+	scroll-behavior:smooth ;
+}
+
+/* initial design end  */
+
+
+
+/* body design start  */
+
+
+body{
+	background:linear-gradient(to right,#fdedec,#fef9e7) ;
+}
+
+
+#mainDiv{
+	width:80% ;
+	height:500px;
+	margin:0 auto ;
+	border:2px solid red ;
+	position:relative ;
+}
+
+#mainDiv #childDiv1{
+	width:50% ;
+	height:auto ;
+	margin:0 auto ;
+	border:2px solid blue ;
+	position:absolute ;
+}
+
+#mainDiv #childDiv1 img{
+	width:100% ; 
+	height:300px ;
+}
+
+#mainDiv #childDiv2{
+	width:50% ;
+	height:300px ;
+	margin:0 auto ;
+	border:2px solid green ;
+	text-align:center ;
+	position:absolute;
+	z-index:-1 ;
+	background-color:rgba(169, 50, 38,0.2) ;
+}
+
+#childDiv1:hover{
+	z-index:-2 ;
+}
+
+
+
+/* body design end  */

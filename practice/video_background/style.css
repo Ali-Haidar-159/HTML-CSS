@@ -1,0 +1,127 @@
+html{
+		scroll-behavior : smooth ;
+}
+			
+*{
+	padding:0 ;
+	margin:0 ;
+	box-sizing:border-box ;
+}
+			
+#mainDiv{
+	width:100% ;
+	height:100vh ;
+	/* background-color:#f9ebea ; */
+}
+
+#box1{
+	position:absolute;
+	z-index:-1 ;
+	height:100vh ;
+}
+
+
+#box2{
+	left:120px ;
+	position:absolute;
+
+}
+
+#navigation_menu{
+	padding:15px 0px ;
+	display:flex;
+	justify-content:center ;
+	align-items:center ;
+}
+
+#logoDiv{
+	width:33.33% ;
+}
+
+#logoDiv i{
+	font-size:2.5rem ;
+	padding:10px ;
+	margin:10px ;
+	border:3px solid white ;
+	border-radius :50% ;
+	color:white;
+}
+
+#menu{
+	width:66.67% ;
+	text-align:right;
+	padding:15px ;
+	font-size:1.1rem;
+}
+
+#menu ul li{
+	display:inline ;
+}
+	
+#menu ul li a{
+	text-decoration:none ;
+	color : white ;
+	padding:10px ;
+	transition:0.4s ;
+}
+
+#menu ul li a:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
+#content{
+	display:flex ;
+	flex-wrap : wrap ;
+	flex-direction:column ;
+	justify-content:center ;
+	align-items:center ;
+	position:relative;
+	top:70px ;
+}
+
+#content #name,#details,#btn{
+	padding:15px ;
+	color:white ;
+}
+
+#details{
+	width:50%;
+	text-align:center;
+	font-size:1rem;
+}
+
+button{
+	width:120px ;
+	height:45px ;
+	border:2px solid white ;
+	background-color:transparent;
+	font-size:1rem;
+	border-radius:10px ;
+}
+
+button:hover{
+	color:black ;
+	background-color:white ;
+	font-weight:bold ;
+}
+
+@media(min-aspect-ratio:16/9){
+	#vdo{
+		width:100% ;
+		height:auto ;
+	}
+}
+
+@media(max-aspect-ratio:16/9){
+	#vdo{
+		width:auto ;
+		height:100% ;
+	}
+}
+
+@media screen and (max-width:700px){ /*for responsive*/
+	#menu ul li{
+		display:flex  ;
+	}
+}

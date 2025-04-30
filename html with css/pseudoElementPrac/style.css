@@ -1,0 +1,50 @@
+/* initial design  */
+
+*{
+
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+
+}
+
+/* main design  */
+
+#heading{
+
+    text-align: center;
+    color: tomato;
+    margin-top: 45vh;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#heading:hover{
+    color: red;
+}
+
+/* #heading::after{
+    content: "this is ali";
+    background-color: #ddd;
+    border: 1px solid blue;
+    padding: 25px;
+    margin-left: 15px;
+} */
+
+
+
+#heading::before{
+
+    content: ""; 
+    margin-right: 15px;
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+
+
+
